@@ -21,24 +21,31 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // this should log: "Is numberTeachers greater than numberStudents?" false
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
+console.log("Is numberTeachers less than numberStudents?", numberTeachers < numberStudents);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
+console.log("Is numberTeachers strictly equal to stringTeachers?", numberTeachers === stringTeachers);
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
+console.log("Is numberTeachers not equal to numberStudents", numberTeachers !== numberStudents);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
+console.log("Is numberStudents greater than or equal to 20", numberStudents >= 20);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
+console.log("Is numberStudents greater than or equal to 21", numberStudents >= 21);
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
+console.log("Is numberStudents less than or equal to 20?", numberStudents <= 20);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
+console.log("Is numberStudents less than or equal to 21", numberStudents <= 21);
 // this should log: true
 
 
@@ -53,20 +60,26 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 console.log(4 < 9);
 // YOU DO: Explain.
+// This line of code will print true to the console.
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+// The variable, books, is assigned to the Number data type of 3 and the line of code will print false to the console.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+// This line of code declares two variables, friends and siblings. The variable, friends, is assigned to the Number of 6, 
+// and the variable, siblings, is assinged to the Number of 2. true will be printed to the console.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
+// This line of code declares two variables, attendees and meals. attendees is assigned to the data type Number of 9, and
+// meals is assigned to the data type Number of 8. It will print true to the console.
 
 
 // #-------------------
@@ -89,15 +102,20 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
+console.log(lovesToPlay && lovesTreats);
 
 
 // Determine if the dog loves to play and loves the dog park
+console.log(lovesToPlay && lovesDogPark)
 
 
 // Determine if the dog loves to play or loves the dog park
+console.log(lovesToPlay || lovesDogPark)
 
 
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && isPuppy)
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: The terminal returned "ReferenceError: isPuppy is not defined" The isPuppy variable was never
+// declared before the line of code. It needed to be assigned to a Boolean in order to run.
